@@ -44,7 +44,10 @@
             </div>
             <div class="filters-cost">
               <h3 class="filters-cost-parametrs">Стоимость в сутки</h3>
-              <label><input type="range" min="0" max="3000" step="100"></label>
+              <label for="lower-range">от 0</label>
+              <input type="range" id="lower-range" min="0" max="3000" step="100">
+              <label for="upper-range">до 3000</label>
+              <input type="range" id="upper-range" min="0" max="3000" step="100" >
               <button class="filters-btn" type="submit">Показать</button>
             </div>
           </form>
@@ -85,10 +88,7 @@
               </p>
               <div class="catalog-item-rating">
                 <div class="rating-stars">
-                  <img src="img/star.svg" width="18" height="17" alt="Рейтинг 8,5 из 10">
-                  <img src="img/star.svg" width="18" height="17" alt="">
-                  <img src="img/star.svg" width="18" height="17" alt="">
-                  <img src="img/star.svg" width="18" height="17" alt="">
+                  <span class="visually-hidden">4 звезды</span>
                   <p class="rating-text">Рейтинг: 8,5</p>
                 </div>
               </div>
@@ -110,9 +110,7 @@
               </p>
               <div class="catalog-item-rating">
                 <div class="rating-stars">
-                  <img src="img/star.svg" width="18" height="17" alt="Рейтинг 8,9 из 10">
-                  <img src="img/star.svg" width="18" height="17" alt="">
-                  <img src="img/star.svg" width="18" height="17" alt="">
+                  <span class="visually-hiddden">3 звезды</span>
                   <p class="rating-text">Рейтинг: 8,9</p>
                 </div>
               </div>
@@ -134,8 +132,7 @@
               </p>
               <div class="catalog-item-rating">
                 <div class="rating-stars">
-                 <img src="img/star.svg" width="18" height="17" alt="Рейтинг 9,2 из 10">
-                 <img src="img/star.svg" width="18" height="17" alt="">
+                  <span class="visually-hiddden">2 звезды</span>
                   <p class="rating-text">Рейтинг: 9,2</p>
                 </div>
               </div>
@@ -154,12 +151,11 @@
             <li><a class="social-button" href="#" aria-label="Смотрите нас на Ютубе">Ютуб</a></li>
           </ul>
         </div>
-        <div class="footer-copyright">
-          <p>website by</p>
+        <p class="footer-copyright"> website by
           <a class="footer-academylogo" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-htmlacademy.svg" alt="Академия HTML" width="115" height="41">
           </a>
-        </div>
+        </p>
       </div>
     </footer>
   </body>

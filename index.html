@@ -30,7 +30,7 @@
         <ul class="features">
           <li class="features-item features-item-blue">
             <h2 class="features-title">Настоящий городок</h2>
-            <p class="numbers">&ndash; №1 &ndash;</p>
+            <p class="features-numbers">&ndash; №1 &ndash;</p>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </li>
           <li class="features-image">
@@ -53,12 +53,12 @@
           </li>
           <li class="features-item features-item-blue">
             <h2 class="features-title">Там есть мост дьявола</h2>
-            <p class="numbers">&ndash; №2 &ndash;</p>
+            <p class="features-numbers">&ndash; №2 &ndash;</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
           <li class="features-item features-item-gray">
             <h2 class="features-title">Небольшая площадь</h2>
-            <p class="numbers">&ndash; №3 &ndash;</p>
+            <p class="features-numbers">&ndash; №3 &ndash;</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li class="features-item features-item-gray">
@@ -76,7 +76,7 @@
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, 
             <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="hotel-search-btn" href="#">Поиск гостиницы в Седоне</a>
+          <a class="hotel-search-btn" href="hotels-search.html">Поиск гостиницы в Седоне</a>
         </section>
       </main>
     </div>
@@ -89,22 +89,22 @@
           <p class="field-wrapper">
             <label for="visit"> Дата заезда: </label>
             <input type="date" id="visit">
-            <button class="btn-calendar">Календарь</button>
+            <button class="btn-calendar" aria-label="Выбрать дату заезда">Календарь</button>
           </p>
           <p class="field-wrapper">
             <label for="departure"> Дата выезда: </label>
             <input type="date" id="departure">
-            <button class="btn-calendar">Календарь</button>
+            <button class="btn-calendar" aria-label="Выбрать дату выезда">Календарь</button>
           </p>
           <p class="field-wrapper">
             <label for="adults-number">Взрослые:</label>
-            <button class="btn-plus">+</button>
+            <button class="btn-plus" aria-label="Увеличить">+</button>
             <input id="adults-number" type="text" name="adults-number">
-            <button class="btn-minus">-</button>
+            <button class="btn-minus" aria-label="Уменьшить">-</button>
             <label for="children-number">Дети:</label>
-            <button class="btn-plus">+</button>
+            <button class="btn-plus" aria-label="Увеличить">+</button>
             <input id="children-number" type="text" name="children-number">
-            <button class="btn-minus">-</button>
+            <button class="btn-minus" aria-label="Уменьшить">-</button>
           </p>
           <button class="btn-search" type="submit">Найти</button>
         </form>
@@ -118,12 +118,11 @@
             <li><a class="social-button" href="#" aria-label="Смотрите нас на Ютубе">Ютуб</a></li>
           </ul>
         </div>
-        <div class="footer-copyright">
-          <p>website by</p>
+        <p class="footer-copyright">website by
           <a class="footer-academylogo" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-htmlacademy.svg" alt="Академия HTML" width="115" height="41">
           </a>
-        </div>
+        </p>
       </div>
     </footer>
   </body>
