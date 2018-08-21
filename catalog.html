@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="page-wrapper">
@@ -15,7 +18,7 @@
             <li><a href="info.html">Информация</a></li>
             <li><a href="photos-videos.html">Фото и видео</a></li>
             <li><a href="map.html">Карта штата</a></li>
-            <li class="current-page"><a>Гостиницы</a></li>
+            <li class="current-page"><a class="active-page">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -48,8 +51,8 @@
               <input type="range" id="lower-range" min="0" max="3000" step="100">
               <label for="upper-range">до 3000</label>
               <input type="range" id="upper-range" min="0" max="3000" step="100" >
-              <button class="filters-btn" type="submit">Показать</button>
             </div>
+              <button class="filters-btn" type="submit">Показать</button>
           </form>
         </section>
         <div class="search-results">
@@ -84,7 +87,7 @@
                 <span class="catalog-category">Гостиница</span>
                 <span class="catalog-item-price">от 4000р.</span>
                 <a class="btn-catalog-item btn-catalog-item-alt" href="">Забронировать</a>
-                <a class="btn-catalog-item " href="">Подробнее</a>
+                <a class="btn-catalog-item" href="">Подробнее</a>
               </p>
               <div class="catalog-item-rating">
                 <div class="rating-stars">
