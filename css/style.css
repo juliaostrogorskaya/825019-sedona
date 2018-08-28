@@ -8,28 +8,71 @@ body {
   color: #333333;
   text-transform: uppercase;
   background-color: #f2f2f2;
+  width: 1280px;
 }
 
-a{
+a {
   text-decoration: none;
 }
-
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
 .page-wrapper {
   background-color: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
+.main-header {
+  min-height: 56px;
+  outline: 1px solid black;
+}
+.main-header-logo {
+  position:absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
 .main-nav {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
   color: #000000;
+  min-height: 56px;
 }
 
 .main-nav-list {
+  margin: 0;
   list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 22px 72px;
 }
 
-.main-nav-list a{
+.main-nav-list li {
+  width: 20%;
+  outline: 1px solid black;
+}
+
+.main-nav-list li:nth-of-type(2) {
+  margin-right: 20%;
+}
+
+.main-nav-list li:nth-of-type(3),
+.main-nav-list li:nth-of-type(4) {
+  text-align: right;
+}
+
+.main-nav-list a {
   color: #000000;
 }
 
@@ -50,10 +93,14 @@ a.active-page {
   background-image: url("../img/index-background.jpg");
   background-size: cover;
   position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 61px;
 }
 
 .promo::after {
   background-image: url("../img/intro-mask.svg");
+  background-repeat: no-repeat;
   content: "";
   position: absolute;
   width: 100%;
@@ -63,21 +110,34 @@ a.active-page {
 }
 
 .intro {
+margin: 0;
+padding: 0;
 text-align: center;
 line-height: 26px;
+margin-bottom: 56px;
 }
 
 .main-title {
+  margin: 0;
   font-size: 21px;
   color: #000000;
+  padding-bottom: 38px;
 }
 
 .features {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 256px;
 }
 
 .features-item {
   text-align: center;
+  min-height: 256px;
+  width: 400px;
+  outline: 1px solid black;
 }
 
 .features-item-blue {
@@ -129,6 +189,12 @@ line-height: 26px;
   background-color: #503e33;
 }
 
+.hotel-search {
+  width: 568px;
+  height: 395px;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
 .hotel-search input {
   font: inherit;
   color: #000000;
@@ -172,6 +238,11 @@ line-height: 26px;
   text-align: left;
 }
 
+.filters-group,
+.filters-cost {
+  display: flex;
+}
+
 .filters-group-parametrs {
   font-size: 16px;
 }
@@ -186,6 +257,7 @@ line-height: 26px;
 
 .search-results {
   text-align: left;
+  display: flex;
 }
 
 .found-results {
@@ -198,7 +270,10 @@ line-height: 26px;
   font-size: 10.5px;
   line-height: 17.5px;
 }
-
+.choose-cathegory-three li,
+.choose-order li {
+  display: inline-block;
+}
 .choose-cathegory-three,
 .choose-order {
   list-style: none;
@@ -219,11 +294,25 @@ line-height: 26px;
   color: #000000;
   border: none;
 }
+.catalog {
+  min-height: 452px;
 
+}
 .catalog-list {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 72px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  outline: 1px solid black;
 }
 
+.catalog-item {
+  display: flex;
+  justify-content: space-around;
+
+}
 .catalogue-item-title {
   font-size: 21px;
   line-height: 26px;
@@ -272,15 +361,26 @@ line-height: 26px;
 .btn-catalog-item-alt:active {
    background-color: #503e33;
 }
-
+.catalog-item-rating {
+  margin-left: auto;
+}
+.catalog-item-image {
+  order: -1;
+}
 .rating-text {
-   text-align: center;
    color: #666666;
    background-color: #f2f2f2;
 }
 
 .main-footer {
   background-color: #ffffff;
+  min-height: 593px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .visit-sedona {
@@ -289,6 +389,7 @@ line-height: 26px;
   line-height: 26px;
   color: #000000;
   text-align: center;
+
 }
 
 .footer-social {
