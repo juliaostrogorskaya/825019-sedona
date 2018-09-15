@@ -9,10 +9,14 @@ var formChildrenNumber = formPopup.querySelector("[name=children-number]");
 formLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   formPopup.classList.toggle("hotel-search-show");
+  formPopup.classList.remove("hotel-search-error");
 });
 
 formForm.addEventListener("submit", function (evt) {
   if (!formDateVisit.value || !formDateDeparture.value || !formAdultsNumber.value || !formChildrenNumber.value) {
   evt.preventDefault();
-  } 
+  formPopup.classList.remove("hotel-search-error");
+  formPopup.offsetWidth = formPopup.offsetWidth;
+  formPopup.classList.add("hotel-search-error");
+  }
 });
